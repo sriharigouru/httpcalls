@@ -1,0 +1,8 @@
+<p>httpcalls works!</p>
+
+<input type="text" #title (keyup.enter)= "createPost(title)" class="form-control">
+<ul class="list-group">
+
+<li *ngFor="let post of posts" class="list-group-item" [id]="post.id">{{post.title}}</li>
+
+
